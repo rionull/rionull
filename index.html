@@ -228,7 +228,6 @@ input.focus-visible {
       <button class="filter" v-on:click="setFilter('LINKCLICK')">LINK CLICK</button>
       <button class="filter" v-on:click="setFilter('SLAM DUNK')">SLAM DUNK</button>
       <button class="filter" v-on:click="setFilter('CASTLEVANIA')">CASTLEVANIA</button>
-      <button class="filter" v-on:click="setFilter('TWST')">TWISTED WONDERLAND</button>
       <button class="filter" v-on:click="setFilter('IDV')">IDENTITY V</button>
       <button class="filter" v-on:click="setFilter('SPIDERMAN')">SPIDERMAN</button>
       <button class="filter" v-on:click="setFilter('AOT')">ATTACK ON TITAN</button>
@@ -264,7 +263,6 @@ input.focus-visible {
       <button class="filter" v-on:click="setFilter('MOUNTHUASECT')">RETURN OF MOUNT HUA SECT</button>
       <button class="filter" v-on:click="setFilter('PHINEAS')">PHINEAS AND FERB</button>
       <button class="filter" v-on:click="setFilter('DRSTONE')">DR. STONE</button>
-      <button class="filter" v-on:click="setFilter('HOB')">HEAVEN OFFICIAL'S BLESSING</button>
       <button class="filter" v-on:click="setFilter('VNC')">VANITAS NO CARTE</button>
       <button class="filter" v-on:click="setFilter('NUCAR')">NU CARNIVAL</button>
       <button class="filter" v-on:click="setFilter('SPYX')">SPY X FAMILY</button>
@@ -276,6 +274,12 @@ input.focus-visible {
       <button class="filter" v-on:click="setFilter('MHA')">MY HERO ACADEMIA</button>
       <button class="filter" v-on:click="setFilter('BCLOVER')">BLACK CLOVER</button>
       <button class="filter" v-on:click="setFilter('OURAN')">OURAN HIGH SCHOOL</button>
+      <button class="filter" v-on:click="setFilter('TRFMR')">TRANSFORMERS</button>
+      <button class="filter" v-on:click="setFilter('MC')">MINECRAFT</button>
+      <button class="filter" v-on:click="setFilter('FNAF')">FNAF</button>
+      <button class="filter" v-on:click="setFilter('KRSJ')">BLACK BUTLER</button>
+      <button class="filter" v-on:click="setFilter('APD')">APOTHECARY DIARIES</button>
+      <button class="filter" v-on:click="setFilter('SCLASS')">My S-Class Hunters</button>
     </div>
     <div class="search-wrapper">
       <input type="text" v-model="search" placeholder="🔍 Search Artist Name" />
@@ -317,6 +321,13 @@ new Vue({
         category: ["ALL","GI", "HSR", "FFXIV", "OG"]
       },
       {
+        title: "Artist Triangle",
+        url: "https://dokidokianimemarket.carrd.co/#error",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image08.jpg",
+        category: ["ALL","TRFMR", "ARKNIGHTS", "FNAF", "IDV", "GI", "HSR", "VTUBERS", "MC", "VOCALOID", "TRIGUN", "OG"]
+      },
+      {
         title: "Astrea",
         url: "https://www.instagram.com/astreaa_",
         image:
@@ -334,7 +345,7 @@ new Vue({
         title: "bbluebellies",
         url: "https://www.instagram.com/bbluebellies/",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image09.jpg",
         category: ["ALL","OP", "GHIBLI", "GI", "JJK", "OG", "KNY", "HXH", "VALORANT", "CSM", "HSR"]
       },
       {
@@ -355,21 +366,21 @@ new Vue({
         title: "Circus-Usagi",
         url: "https://circus-usagi.art/",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image10.png",
         category: ["ALL","OG", "HEARTSTEEL", "LOZ"]
       },
       {
         title: "clown town down town",
         url: "https://clowntowndowntown.carrd.co/",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image11.jpg",
         category: ["ALL","GI", "HSR", "JJK", "TRIGUN", "PHINEAS", "GRAVITYFALLS", "ADVTIME", "OWHOUSE"]
       },
       {
         title: "CurryNoodle Art",
         url: "https://www.instagram.com/currynoodleart",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image12.jpg",
         category: ["ALL","HOLOLIVE", "HSR"]
       },
       {
@@ -390,14 +401,14 @@ new Vue({
         title: "Del lwl",
         url: "https://www.instagram.com/mandadadadada/",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image13.jpg",
         category: ["ALL","HSR", "ARKNIGHTS", "ORV", "LINKCLICK", "GI", "SNF", "BTRK", "MOUNTHUASECT"]
       },
       {
         title: "Feyi x Seventynone",
         url: "https://dokidokianimemarket.carrd.co/#error",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image14.jpg",
         category: ["ALL","GI", "KNY", "BLOCK", "SHXTOU", "PARADOX LIVE", "2J3J", "TOT", "VOCALOID", "DRSTONE", "OG", "ONK", "HOB", "VNC", "BSD"]
       },
       {
@@ -411,7 +422,7 @@ new Vue({
         title: "Hira Icigocha",
         url: "https://www.instagram.com/15cha_hira",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image15.jpg",
         category: ["ALL","OG", "APEX", "DGRP"]
       },
       {
@@ -429,45 +440,45 @@ new Vue({
         category: ["ALL","OG", "2J3J", "VTUBERS", "HSR", "GI", "OWHOUSE", "GRAVITYFALLS", "ADVTIME"]
       },
       {
-        title: "Karasoba X Onibijutsu x Cipher",
+        title: "Kabayao",
         url: "https://dokidokianimemarket.carrd.co/#error",
         image:
           "https://test-a.crd.co/assets/images/image01.png",
-        category: ["ALL","JJK", "HSR", "R1999", "CSM", "VTUBERS"]
+        category: ["ALL","KRSJ", "MADOKA", "LOZ", "GI", "APD"]
       },
       {
-        title: "saltyboos",
-        url: "https://saltyboos.com/",
+        title: "Karasoba X Onibijutsu x Cipher",
+        url: "https://dokidokianimemarket.carrd.co/#error",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
-        category: ["ALL","SPLATOON", "GI", "PKMN", "HSR", "HAIKYU", "PTN", "OG"]
+          "https://dokidokianimemarket.carrd.co/assets/images/image16.jpg",
+        category: ["ALL","JJK", "HSR", "R1999", "CSM", "VTUBERS"]
       },
       {
         title: "Kaypoh Cats",
         url: "https://kaypohcat.carrd.co/",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
-        category: ["ALL","OG"]
+          "https://dokidokianimemarket.carrd.co/assets/images/image17.png",
+        category: ["ALL"]
       },
       {
         title: "kyamaruu",
         url: "https://dokidokianimemarket.carrd.co/#error",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image18.jpg",
         category: ["ALL","GI", "OG", "2J3J", "LOZ", "VOCALOID", "JJK", "CSM", "TADC"]
       },
       {
         title: "Ladywaltz & HAE",
         url: "https://dokidokianimemarket.carrd.co/#error",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image19.jpg",
         category: ["ALL","GI", "PTN", "HSR", "CASTLEVANIA"]
       },
       {
         title: "Leonie",
         url: "https://dokidokianimemarket.carrd.co/#error",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image20.jpg",
         category: ["ALL","GI", "HSR", "VOCALOID", "ORV"]
       },
       {
@@ -481,7 +492,7 @@ new Vue({
         title: "Makrows X Shoucchi",
         url: "https://dokidokianimemarket.carrd.co/#error",
         image:
-          "https://test-a.crd.co/assets/images/image01.png",
+          "https://dokidokianimemarket.carrd.co/assets/images/image21.jpg",
         category: ["ALL","HSR", "GI", "VALORANT"]
       },
       {
@@ -497,6 +508,76 @@ new Vue({
         image:
           "https://test-a.crd.co/assets/images/image01.png",
         category: ["ALL","GI", "HSR", "HI3"]
+      },
+      {
+        title: "Micabuns",
+        url: "https://www.instagram.com/micabuns/",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image22.png",
+        category: ["ALL","JJK", "AOT", "CSM", "SNF", "KNY"]
+      },
+      {
+        title: "miothle's atelier",
+        url: "https://dokidokianimemarket.carrd.co/#error",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image23.jpg",
+        category: ["ALL","GI", "R1999", "HSR"]
+      },
+      {
+        title: "MoriCreatives",
+        url: "https://dokidokianimemarket.carrd.co/#error",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image24.jpg",
+        category: ["ALL","GI", "HSR", "2J3J", "ARKNIGHTS", "OG", "ORV", "ONK", "R1999"]
+      },
+      {
+        title: "Nisemori",
+        url: "https://dokidokianimemarket.carrd.co/assets/images/image25.jpg",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image24.jpg",
+        category: ["ALL","HOLOLIVE"]
+      },
+      {
+        title: "No-Pain Cool-Stain",
+        url: "https://instagram.com/nopain_coolstain",
+        image:
+          "https://test-a.crd.co/assets/images/image01.png",
+        category: ["ALL","OG"]
+      },
+      {
+        title: "Nocturnal Fwends",
+        url: "https://nocturnalfwends.carrd.co",
+        image:
+          "https://test-a.crd.co/assets/images/image01.png",
+        category: ["ALL","GI", "HAIKYU", "NARUTO", "DCCOMICS", "OG"]
+      },
+      {
+        title: "Oishikunare",
+        url: "https://dokidokianimemarket.carrd.co/#error",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image26.jpg",
+        category: ["ALL","BA", "HOLOLIVE", "AZUR", "GI", "HSR", "NIKKE", "OG"]
+      },
+      {
+        title: "prinzcake",
+        url: "https://dokidokianimemarket.carrd.co/#error",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image27.png",
+        category: ["ALL","GI", "HSR", "FFXIV", "JJK", "ARKNIGHTS", "OG"]
+      },
+      {
+        title: "saltska",
+        url: "https://heromix.carrd.co/",
+        image:
+          "https://test-a.crd.co/assets/images/image01.png",
+        category: ["ALL","FFXIV", "OG", "BG3"]
+      },
+      {
+        title: "saltyboos",
+        url: "https://saltyboos.com/",
+        image:
+          "https://dokidokianimemarket.carrd.co/assets/images/image28.png",
+        category: ["ALL","SPLATOON", "GI", "PKMN", "HSR", "HAIKYU", "PTN", "OG"]
       },
       {
         title: "SRKORK",
