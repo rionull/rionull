@@ -229,7 +229,7 @@ input.focus-visible {
       <button class="filter" v-on:click="setFilter('SLAM DUNK')">Slam Dunk</button>
       <button class="filter" v-on:click="setFilter('CASTLEVANIA')">Castlevania</button>
       <button class="filter" v-on:click="setFilter('IDV')">Identity V</button>
-      <button class="filter" v-on:click="setFilter('SPIDERMAN')">Spiderman</button>
+      <button class="filter" v-on:click="setFilter('SPIDERMAN')">Spiderverse</button>
       <button class="filter" v-on:click="setFilter('AOT')">Attack on Titan</button>
       <button class="filter" v-on:click="setFilter('NARUTO')">Naruto</button>
       <button class="filter" v-on:click="setFilter('JJBA')">Jojo's Bizarre Adventures</button>
@@ -270,6 +270,7 @@ input.focus-visible {
       <button class="filter" v-on:click="setFilter('ENSTARS')">Ensemble Stars</button>
       <button class="filter" v-on:click="setFilter('IDOLISH7')">IDOLiSH 7</button>
       <button class="filter" v-on:click="setFilter('BANGDREAM')">BanG DreaM!</button>
+	  <button class="filter" v-on:click="setFilter('PRSK')">Project Sekai</button>
       <button class="filter" v-on:click="setFilter('P5')">Persona 5</button>
       <button class="filter" v-on:click="setFilter('MHA')">My Hero Academia</button>
       <button class="filter" v-on:click="setFilter('BCLOVER')">Black Clover</button>
@@ -280,6 +281,20 @@ input.focus-visible {
       <button class="filter" v-on:click="setFilter('KRSJ')">Black Butler</button>
       <button class="filter" v-on:click="setFilter('APD')">Apothecary Diaries</button>
       <button class="filter" v-on:click="setFilter('SCLASS')">My S-Class Hunters</button>
+	  <button class="filter" v-on:click="setFilter('EVA')">Evangelion</button>
+	  <button class="filter" v-on:click="setFilter('MTP')">Moriarty the Patriot</button>
+      <button class="filter" v-on:click="setFilter('PJ')">Percy Jackson</button>
+	  <button class="filter" v-on:click="setFilter('TA')">Thousand Autumns</button>
+	  <button class="filter" v-on:click="setFilter('KSSJ')">Black Butler</button>
+	  <button class="filter" v-on:click="setFilter('OMORI')">Omori</button>
+	  <button class="filter" v-on:click="setFilter('2HA')">2HA</button>
+	  <button class="filter" v-on:click="setFilter('HB')">Hazbin Hotel</button>
+	  <button class="filter" v-on:click="setFilter('MIK')">Mairimashita Iruma-kun</button>
+	  <button class="filter" v-on:click="setFilter('BSTR')">Beastars</button>
+	  <button class="filter" v-on:click="setFilter('TR')">Tokyo Revengers</button>
+	  <button class="filter" v-on:click="setFilter('OM')">Obey me!!</button>
+	  <button class="filter" v-on:click="setFilter('MOB')">Mob Psycho 100</button>
+	  <button class="filter" v-on:click="setFilter('MASHLE')">Mashle</button>
     </div>
     <div class="search-wrapper">
       <input type="text" v-model="search" placeholder="🔍 Search Artist Name" />
@@ -306,19 +321,258 @@ new Vue({
     search: "",
     currentFilter: "ALL",
     projects: [
+{
+title: "A1 Machi Mile",
+url: "https://bento.me/machi-mile",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","2J3J","OG","GI","HSR","EVA"]
+},
+{
+title: "A2 heyjonut",
+url: "https://www.instagram.com/heyjonut",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","OG","PKMN","JJK","GI","HSR","LOZ","2J3J"]
+},
+{
+title: "A3 Leonie",
+url: "https://twitter.com/Leonie2814",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI","HSR","VOCALOID","ORV"]
+},
+{
+title: "A4 ventihands x aloeinabox",
+url: "https://dokidokianimemarket.carrd.co/#a4",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","BSD","MTP","PJ","TA","ORV","CSM","HSR","GI","KSSJ","R1999","OMORI","LINKCLICK","2HA","SPIDERMAN","SPYX"]
+},
+{
+title: "A5 Kabayao",
+url: "https://dokidokianimemarket.carrd.co/#a5",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","KSSJ","MADOKA","LOZ","GI","APD"]
+},
+{
+title: "A8 Ladywaltz & HAE",
+url: "https://dokidokianimemarket.carrd.co/#c0a8",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image19.jpg",
+category: ["ALL","GI","PTN","HSR","CASTLEVANIA"]
+},
+{
+title: "A9 DARU",
+url: "https://twitter.com/daruo_0",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI","HSR","P5","SNF"]
+},
+{
+title: "A10 Xeph's Artworks",
+url: "https://www.pixiv.net/en/users/110174",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","BA","SNF","BTRK","HSR","GI"]
+},
+{
+title: "A11-A12 prinzcake & rachelhuey",
+url: "https://dokidokianimemarket.carrd.co/#c0a11",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image27.jpg",
+category: ["ALL","GI","HSR","FFXIV","JJK","ARKNIGHTS","OG"]
+},
+{
+title: "A13 Boyfailure Coalition",
+url: "https://dokidokianimemarket.carrd.co/#a13",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","OG","GI","HSR","WHA","ORV","OP","BSD","LINKCLICK","HB","SNF","MIK","BG3","BSTR"]
+},
+{
+title: "A14 Kohitorii x Unisagii",
+url: "https://dokidokianimemarket.carrd.co/#a14",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","TR","BSD","HSR","GI","VOCALOID","OM","PRSK","MOB","JJK","MASHLE","HB","ORV"]
+},
+{
+title: "A15 Shoggya",
+url: "https://dokidokianimemarket.carrd.co/#a15",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","VTUBERS","HOLOLIVE","2J3J","GI","AA","OP","IDV","VOCALOID","KSSJ","OW"]
+},
+{
+title: "A16 kurage.bakery",
+url: "https://dokidokianimemarket.carrd.co/#a16",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI","SPIDERMAN","LOZ","HADES"]
+},
+{
+title: "A17-A18 o.mj studio",
+url: "https://www.instagram.com/o.mj_studio",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","PKMN","GI","HSR","DGMN","KNY","OP","SPYX","GHIBLI","OG"]
+},
+{
+title: "A19 mochibuddies",
+url: "https://www.mochibuddies.com/",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","OG"]
+},
+{
+title: "A20 Sngarila.art",
+url: "https://instagram.com/sngarila.art",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","JJK","HSR","GI","KNY","CSM"]
+},
+{
+title: "A21 Soggy x Raredrops",
+url: "https://dokidokianimemarket.carrd.co/#a21",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","HSR","GI","HOLOLIVE","PKMN","OG"]
+},
+{
+title: "A22 Del lwl",
+url: "https://www.instagram.com/del_lwl/",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image13.jpg",
+category: ["ALL","HSR", "ARKNIGHTS", "ORV", "LINKCLICK", "GI", "SNF", "BTRK", "MOUNTHUASECT"]
+},
+{
+title: "A23 一夜暴富",
+url: "https://linktr.ee/ichiya_777",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","2J3J","HOLOLIVE","PLAVE","EVA","ONK"]
+},
+{
+title: "A24 ShiroNiji",
+url: "https://shironiji-arts.tumblr.com/",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GGS","GBF","HSR","GI","ARKNIGHTS"]
+},
+{
+title: "A25 The Confetti Hands",
+url: "https://www.behance.net/racheldivya",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GHIBLI","OG"]
+},
+{
+title: "A26 Heather Designs",
+url: "https://linktr.ee/Heather_designs",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","OG"]
+},
+{
+title: "A27-A28 xixipencil + jrpencil",
+url: "https://dokidokianimemarket.carrd.co/#a27",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","HSR","VALORANT","GI","NIKKE"]
+},
+{
+title: "A29 Bread Dippers",
+url: "https://dokidokianimemarket.carrd.co/#a29",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","ARKNIGHTS","2J3J","PARADOX LIVE","HB","OP","PKMN","OWHOUSE"]
+},
+{
+title: "A30 Jabbawokku",
+url: "https://instagram.com/jabbawokku",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","OP","DGMN","PKMN"]
+},
+{
+title: "A31 Tomyo",
+url: "https://dokidokianimemarket.carrd.co/#a31",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","HOLOLIVE","GI","IDV","HSR","2J3J","SPLATOON","PKMN","KIRBY","AC","OG"]
+},
+{
+title: "A32 peachizura x _thequeeny x kardiodiatos",
+"url: "https://dokidokianimemarket.carrd.co/#a32"
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","HAIKYU","OURAN","TR","BLOCK","2J3J","ENSTARS","DPS","TOT","ENSTARS","PLAVE","OMORI","OG"]
+},
+{
+title: "A33 Kemono Mimi Shrine(KMS)",
+url: "https://dokidokianimemarket.carrd.co/#a33",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","VTUBERS","FFXIV","GOMENS","VOCALOID","GI","AC","HSR","OG"]
+},
+{
+title: "B1 Brother Ming Games",
+url: "https://www.brotherminggames.com/",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI","HSR"]
+},
+{
+title: "B3 Tamaffles",
+url: "https://dokidokianimemarket.carrd.co/#c0a16",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image31.jpg",
+category: ["ALL","GI", "VTUBERS", "HSR", "OG", "S2M", "MNBIG", "LINKCLICK", "JJK", "KAGEROU", "AC", "RPG", "GHIBLI"]
+},
+{
+title: "B4 syansoup",
+url: "https://dokidokianimemarket.carrd.co/#c0a15",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI", "HSR", "2J3J", "DCCOMICS", "CSM", "ORV", "BG3", "IDV"]
+},
+{
+title: "B5-B6 SG Vtubers",
+"url: "https://dokidokianimemarket.carrd.co/#b5"
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","OG"]
+},
+{
+title: "B7 Nocturnal Fwends",
+url: "https://nocturnalfwends.carrd.co",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI", "HAIKYU", "NARUTO", "DCCOMICS", "OG"]
+},
+{
+title: "B8 Circus-Usagi",
+url: "https://circus-usagi.art/",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image10.jpg",
+category: ["ALL","OG", "HEARTSTEEL", "LOZ"]
+},
+{
+title: "B9 lost.misery x golden.doodless",
+url: "https://dokidokianimemarket.carrd.co/#b9",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","HSR","GI","COOKIE","GOMENS","LOL","VALORANT","SPIDERMAN","LADYBUG","HADES","OG"]
+},
+{
+title: "B10 Wyrrd Rune",
+url: "https://www.instagram.com/wyrrdrune/",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","ALL"]
+},
+{
+title: "B11 Chaos Gang",
+url: "https://dokidokianimemarket.carrd.co/#b11",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI","HSR","PRSK","KAGEROU","NUCAR","TRIGUN"]
+},
+{
+title: "B12 saltyboos",
+url: "https://saltyboos.com/",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image28.jpg",
+category: ["ALL","SPLATOON", "GI", "PKMN", "HSR", "HAIKYU", "PTN", "OG"]
+},
+{
+title: "B13 Institute of Toy Research",
+url: "https://dokidokianimemarket.carrd.co/#b13",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI","HSR","OM","OG"]
+},
+{
+title: "B14 Allenerie",
+url: "https://www.allenerie.com",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
+category: ["ALL","GI", "HSR", "FFXIV", "OG"]
+},
+{
+title: "B15 YuraxMae & Kuehmerlion",
+url: "https://dokidokianimemarket.carrd.co/#c0a23",
+image: "https://dokidokianimemarket.carrd.co/assets/images/image06.jpg",
+category: ["ALL","HI3", "HOLOLIVE", "R1999", "HSR", "GI", "OG", "CSM", "BANGDREAM", "MADOKA"]
+},
       {
         title: "(˶‾᷄ ⁻̫ ‾᷅˵)",
         url: "https://dokidokianimemarket.carrd.co/#c0a1",
         image:
           "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
         category: ["ALL","2J3J", "OMORI", "ORV", "PLAVE", "BLOCK", "NUCAR", "BSD", "TRIGUN", "IDV", "GI", "LCF"]
-      },
-      {
-        title: "Allenerie",
-        url: "https://www.allenerie.com",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
-        category: ["ALL","GI", "HSR", "FFXIV", "OG"]
       },
       {
         title: "Artist Triangle",
@@ -363,13 +617,6 @@ new Vue({
         category: ["ALL","OP", "GHIBLI", "KNY", "JJK", "AOT", "HXH", "AVATAR", "ORV", "HAIKYU", "MHA", "BCLOVER", "FURUBA", "OURAN", "JJBA"]
       },
       {
-        title: "Circus-Usagi",
-        url: "https://circus-usagi.art/",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image10.jpg",
-        category: ["ALL","OG", "HEARTSTEEL", "LOZ"]
-      },
-      {
         title: "clown town down town",
         url: "https://clowntowndowntown.carrd.co/",
         image:
@@ -396,13 +643,6 @@ new Vue({
         image:
           "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
         category: ["ALL","GI", "HSR", "JJK"]
-      },
-      {
-        title: "Del lwl",
-        url: "https://www.instagram.com/del_lwl/",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image13.jpg",
-        category: ["ALL","HSR", "ARKNIGHTS", "ORV", "LINKCLICK", "GI", "SNF", "BTRK", "MOUNTHUASECT"]
       },
       {
         title: "Feyi x Seventynone",
@@ -440,13 +680,6 @@ new Vue({
         category: ["ALL","OG", "2J3J", "VTUBERS", "HSR", "GI", "OWHOUSE", "GRAVITYFALLS", "ADVTIME"]
       },
       {
-        title: "Kabayao",
-        url: "https://dokidokianimemarket.carrd.co/#c0a6",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
-        category: ["ALL","KRSJ", "MADOKA", "LOZ", "GI", "APD"]
-      },
-      {
         title: "Karasoba X Onibijutsu x Cipher",
         url: "https://dokidokianimemarket.carrd.co/#c0a7",
         image:
@@ -467,13 +700,7 @@ new Vue({
           "https://dokidokianimemarket.carrd.co/assets/images/image18.jpg",
         category: ["ALL","GI", "OG", "2J3J", "LOZ", "VOCALOID", "JJK", "CSM", "TADC"]
       },
-      {
-        title: "Ladywaltz & HAE",
-        url: "https://dokidokianimemarket.carrd.co/#c0a8",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image19.jpg",
-        category: ["ALL","GI", "PTN", "HSR", "CASTLEVANIA"]
-      },
+
       {
         title: "Leonie",
         url: "https://twitter.com/Leonie2814",
@@ -538,13 +765,6 @@ new Vue({
         category: ["ALL","OG"]
       },
       {
-        title: "Nocturnal Fwends",
-        url: "https://nocturnalfwends.carrd.co",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
-        category: ["ALL","GI", "HAIKYU", "NARUTO", "DCCOMICS", "OG"]
-      },
-      {
         title: "Oishikunare",
         url: "https://dokidokianimemarket.carrd.co/#c0a13",
         image:
@@ -552,25 +772,11 @@ new Vue({
         category: ["ALL","BA", "HOLOLIVE", "AZUR", "GI", "HSR", "NIKKE", "OG"]
       },
       {
-        title: "prinzcake",
-        url: "https://dokidokianimemarket.carrd.co/#c0a11",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image27.jpg",
-        category: ["ALL","GI", "HSR", "FFXIV", "JJK", "ARKNIGHTS", "OG"]
-      },
-      {
         title: "saltska",
         url: "https://heromix.carrd.co/",
         image:
           "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
         category: ["ALL","FFXIV", "OG", "BG3"]
-      },
-      {
-        title: "saltyboos",
-        url: "https://saltyboos.com/",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image28.jpg",
-        category: ["ALL","SPLATOON", "GI", "PKMN", "HSR", "HAIKYU", "PTN", "OG"]
       },
       {
         title: "Sarah Thursday",
@@ -627,20 +833,6 @@ new Vue({
         image:
           "https://dokidokianimemarket.carrd.co/assets/images/image30.jpg",
         category: ["ALL","HOLOLIVE"]
-      },
-      {
-        title: "syansoup",
-        url: "https://dokidokianimemarket.carrd.co/#c0a15",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image07.jpg?v=e7aeb2d2",
-        category: ["ALL","GI", "HSR", "2J3J", "DCCOMICS", "CSM", "ORV", "BG3", "IDV"]
-      },
-      {
-        title: "Tamaffles",
-        url: "https://dokidokianimemarket.carrd.co/#c0a16",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image31.jpg",
-        category: ["ALL","GI", "VTUBERS", "HSR", "OG", "S2M", "MNBIG", "LINKCLICK", "JJK", "KAGEROU", "AC", "RPG", "GHIBLI"]
       },
       {
         title: "Tea&Buns",
@@ -711,13 +903,6 @@ new Vue({
         image:
           "https://dokidokianimemarket.carrd.co/assets/images/image38.jpg",
         category: ["ALL",]
-      },
-      {
-        title: "YuraxMae & Kuehmerlion",
-        url: "https://dokidokianimemarket.carrd.co/#c0a23",
-        image:
-          "https://dokidokianimemarket.carrd.co/assets/images/image06.jpg",
-        category: ["ALL","HI3", "HOLOLIVE", "R1999", "HSR", "GI", "OG", "CSM", "BANGDREAM", "MADOKA"]
       },
     ]
   },
